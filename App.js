@@ -1,12 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import Greeting from "./components/greeting.component";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <TextInput value="Deluxan Mariathasan" />
-      <Text>Welcome to the project</Text>
       <StatusBar style="auto" />
+      <Greeting />
     </View>
   );
 }
